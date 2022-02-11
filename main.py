@@ -4,7 +4,7 @@ from aiogram.dispatcher import Dispatcher, filters
 from aiogram.utils import executor
 from aiogram.utils.markdown import hbold, hlink
 import logging
-from CpuGpuModule import getGpuTemperature
+from CpuGpuModule import getTemperature
 import time
 
 
@@ -21,10 +21,8 @@ async def start_command(message: types.Message):
 @dp.message_handler(commands="get_temp")
 async def send_temperature_to_tg(message: types.Message):
     while True:
+        await message.answer(f"{hbold('Температура CPU:')} {(getTemperature('CPU'))}\n{hbold('Температура GPU:')} {getTemperature('GPU')} ")
         time.sleep(60)
-        # cpu_temp = 1
-        gpu_temp = 2
-        await message.answer(f"{hbold('Температура CPU:')} {getGpuTemperature()}\n{hbold('Температура GPU:')} {gpu_temp} ")
 
 async def test_message(message: types.Message):
     await message.reply("Тестовое сообщение для теста бота!")
