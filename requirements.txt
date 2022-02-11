@@ -1,2 +1,2 @@
 aiogram==2.19
-GPUtil=1.4.0
+WMI=1.5.1
