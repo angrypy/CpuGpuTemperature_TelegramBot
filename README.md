@@ -13,6 +13,6 @@ How to start Windows PC:
 11. Bot it's works!
 
 How to Bot stop:
-1. Run Stop the bot.bat
+1. Run "Stop the bot.bat"
 2. Profit!
 
