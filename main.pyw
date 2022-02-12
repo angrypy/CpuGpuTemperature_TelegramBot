@@ -21,8 +21,11 @@ async def start_command(message: types.Message):
 @dp.message_handler(commands="get_temp")
 async def send_temperature_to_tg(message: types.Message):
     while True:
-        await message.answer(f"{hbold('Температура CPU:')} {(getTemperature('CPU'))}\n{hbold('Температура GPU:')} {getTemperature('GPU')} ")
-        time.sleep(60)
+        try:
+            await message.answer(f"{hbold('Температура CPU:')} {(getTemperature('CPU'))}\n{hbold('Температура GPU:')} {getTemperature('GPU')} ")
+            time.sleep(60)
+        except:
+            await message.answer("Шеф, проблемы получения данных с датчиков!")
 
 async def test_message(message: types.Message):
     await message.reply("Тестовое сообщение для теста бота!")
