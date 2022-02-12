@@ -1,14 +1,16 @@
-# TempCPUGPUToTG_bot
+# CpuGpuTemperature_TelegramBot
 How to start Windows PC:
 1. Install Python https://www.python.org/downloads/
 2. Install Open Hardware Monitor: https://openhardwaremonitor.org/downloads/
 3. Run Open Hardware Monitor, enable in settings: Start Minimized, Minimize to tray, Run on Windows Startup
 4. For the bot to work, the program must always be running!
 5. Install requirements.txt
-6. Open PowerShell in Bot directory and input: pip3 install -r requirements.txt
-7. Or: Run install_requirements.bat
-8. Run main.pyw
-9. Bot it's works!
+6. Get a telegram bot token: https://core.telegram.org/bots#6-botfather
+7. Insert the received token between quotes in config.py: tg_bot_token = "TOKEN"
+8. Open PowerShell in Bot directory and input: pip3 install -r requirements.txt
+9. Or: Run install_requirements.bat
+10. Run main.pyw
+11. Bot it's works!
 
 How to Bot stop:
 1. Run Stop the bot.bat
