@@ -1,5 +1,5 @@
 # CpuGpuTemperature_TelegramBot
-###**Important note:**
+###Important note:
 The bot works with default values that the **Open Hardware Monitor** program allows you to change. If you change the values, make the necessary changes to the code
 
 ![Альтернативный текст](https://i.imgur.com/IT2pxYd.png "Подсказка")
