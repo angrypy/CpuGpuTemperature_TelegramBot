@@ -8,5 +8,5 @@ def getTemperature(arg):
     for sensor in sensors:
         if arg == 'CPU' and sensor.Name == 'CPU Package' and sensor.SensorType == 'Temperature':
             return sensor.Value
-        elif arg == 'GPU' and sensor.Name == 'GPU Temp' and sensor.SensorType == 'Temperature':
+        elif arg == 'GPU' and sensor.Name == 'GPU Core' and sensor.SensorType == 'Temperature':
             return sensor.Value
