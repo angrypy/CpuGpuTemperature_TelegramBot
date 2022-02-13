@@ -16,7 +16,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands="start")
 async def start_command(message: types.Message):
-    await message.reply("Привет, мы пупа и лупа, и это привет от бота!")
+    await message.reply("Hello! I will show you the temperature!")
 
 @dp.message_handler(commands="get_temp")
 async def send_temperature_to_tg(message: types.Message):
@@ -27,11 +27,9 @@ async def send_temperature_to_tg(message: types.Message):
         except:
             await message.answer("Шеф, проблемы получения данных с датчиков!")
 
-async def test_message(message: types.Message):
-    await message.reply("Тестовое сообщение для теста бота!")
-
 if __name__ == "__main__":
     executor.start_polling(dp)
+
 
 
 
